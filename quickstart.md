@@ -4,7 +4,7 @@
 
 Sparkle framework is designed to be running on different containers or servers, for example you can choose run it on netty server or servlet container. We will choose servlet container in this quick start.
 
-Add this to your maven's `pom.xml`
+Add dependency to your maven's `pom.xml`
 
 ```xml
   <dependency>
@@ -14,18 +14,23 @@ Add this to your maven's `pom.xml`
   </dependency>
 ```
 
+Other dependency managers such as gradle:
+
+```groovy
+  compile "org.agilej:sparkle-servlet:1.0-SNAPSHOT"
+```
+
 ## Define your first route
 
-Create one `RouteModule` java class
+Create one `RouteModule` java class, define your route rules.
 
 ```java
   public class DemoRouteModule implements RouteModule {
     
-
-    @Override
-    public void config(Router router) {
-        router.match("/user/{id}").to("user#show");
-    }
+      @Override
+      public void config(Router router) {
+          router.match("/user/{id}").to("user#show");
+      }
 
   }
 ```
@@ -50,4 +55,5 @@ public class UserController{
 
 ## Run
 
-Run with jetty from maven `mvn jetty:run`, now open your browser and open `http://127.0.0.1:8080/user/1` you will see the json result.
+Run with jetty from maven with command `mvn jetty:run`, then open `http://127.0.0.1:8080/user/1` in your browser, you will see the json result.
+
