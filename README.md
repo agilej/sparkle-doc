@@ -6,7 +6,7 @@
 
 * [Feature](feature.md)
   
-* [路由](route.md)
+* [Route](route.md)
    * [Route module](route_module.md)
    * [Route rule with conditions](route_condition.md)
 
@@ -18,7 +18,7 @@
 
 * [Interceptor](interceptor.md)
 
-* [视图](view.md)
+* [View Resolve](view.md)
 
   * Resolving views with the ViewResolver interface
   * Redirect
