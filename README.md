@@ -1,6 +1,6 @@
 # Quick Start
 
-
+* [Quick start guide](quickstart.md)
 
 # Reference
 
