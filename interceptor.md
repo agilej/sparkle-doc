@@ -10,7 +10,7 @@ All the interceptors you created should be registered from `Config#registerInter
 
 Here is the example for how to apply a login-check interceptor:
 
-1. Define Interceptor
+1. __Define Interceptor__
 
     ```java
     public LoginCheckInterceptor implements Interceptor {
@@ -29,7 +29,7 @@ Here is the example for how to apply a login-check interceptor:
     }
 
     ```
-2. Register Interceptor
+2. __Register Interceptor__
     
     ```java
     public AppConfig implements Application {
