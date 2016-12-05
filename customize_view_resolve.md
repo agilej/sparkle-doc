@@ -29,7 +29,7 @@ Here is one example to integrate [Pebble Template Engine](http://www.mitchellbos
     }
     ```
 
-3. __Register your own ViewRender
+3. __Register your own ViewRender__
 
     ```java
     class AppConfig implement Application {
