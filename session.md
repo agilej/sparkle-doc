@@ -8,6 +8,10 @@ Here are some general guidelines on sessions.
 
 ## Session API In Sparkle
 
+`Session` interface is used to handle the session data, you can get it from `WebRequest#session`.
+
+
+
 ## Session Storage
 
 Sparkle provides several storage mechanisms for the session data.
@@ -26,6 +30,22 @@ That means the security of cookie storage depends on this secret (and on the dig
 `secret_key_base` is used for specifying a key which allows sessions for the application to be verified against a known secure key to prevent tampering. 
 
 If you have found your application where the secret was exposed (e.g. an application whose source was shared), strongly consider changing the secret.
+
+Another attention for cookie based session storage is the data serialization, defaultly Sparkle convert the session data to JSON format before encrypting, after receiving the data back it resemble the session from json data, because of the limitation of JSON's data type, you have to be caution of data type you used in session. For example if you set `Integer` or `Float` numbers to session, you can't directly get session data as expected data type and need to use `Number` instead. Here is one example:
+
+```java
+
+//set session
+
+Integer uid = user.id();
+session.set("uid", uid);
+
+//get session, you should use Number instead
+
+Number uidNumber = session.get("uid");
+Integer uid = uidNumber.integerValue();
+
+```
 
 ### Vendor provided session store
 
