@@ -29,11 +29,11 @@
     * Customize view templating support 
 
 * [Using Session](session.md)
-  * Using Session
-  * Session Store Strategies
+  * [Using Session](session.md#session-api-in-sparkle)
+  * [Session Store Strategies](session.md#session-storage)
     * Cookie Based Session Store
     * Vendor Session Store
-  * Customize session store
+  * [Customize session store](session.md#customize-session-store)
 
 * [Using locales](locales.md)
   * AcceptHeaderLocaleResolver

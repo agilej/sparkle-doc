@@ -65,3 +65,6 @@ Integer uid = uidNumber.integerValue();
 ### Vendor provided session store
 
 If you run Sparkle application under Servlet container like Tomcat, you may choose the vendor provided session store, pass this task of storing session data to underline servlet container, just like what you do in traditional servlet programming.
+
+## Customize Session Store
+
