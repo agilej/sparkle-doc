@@ -4,9 +4,7 @@ Sometimes it's reasonable to pass customized argument type to action method, Spa
 
 Here is one example with supporting customized argument type `Foo`
 
-
-
-1. define your argument class
+__Define your argument class__
 
 ```java
 class Foo { 
@@ -14,7 +12,7 @@ class Foo {
 }
 ```
 
-2. implement ArguemntResolver
+__Implement ArguemntResolver__
 
 ```java
 class FooArgumentResolver implement ArgumentResolver {
@@ -33,7 +31,7 @@ class FooArgumentResolver implement ArgumentResolver {
 }
 ```
 
-3. register FooArgumentResolver
+__Register FooArgumentResolver__
 
 ```java
 class AppConfig implement Application {
@@ -46,7 +44,7 @@ class AppConfig implement Application {
 }
 ```
 
-4. use it in your controller's action method
+__Use it in your controller's action method__
 
 ```java
 @Controller
