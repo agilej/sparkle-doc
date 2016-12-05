@@ -4,11 +4,16 @@ Sometimes it's reasonable to pass customized argument type to action method, Spa
 
 Here is one example with supporting customized argument type `Foo`
 
-```
+```java
 
-class Foo { //... }
+// 1. define your argument class
 
-//implement ArguemntResolver
+class Foo { 
+  //... 
+}
+
+// 2. implement ArguemntResolver
+
 class FooArgumentResolver implement ArgumentResolver {
   
   public boolean support(ActionMethodParameter actionMethodParameter) {
@@ -24,7 +29,7 @@ class FooArgumentResolver implement ArgumentResolver {
 
 }
 
-//register FooArgumentResolver
+// 3. register FooArgumentResolver
 
 class AppConfig implement Application {
 
@@ -35,7 +40,7 @@ class AppConfig implement Application {
 
 }
 
-//use it in your controller's action method
+// 4. use it in your controller's action method
 
 @Controller
 class BarController {
