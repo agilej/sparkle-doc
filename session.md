@@ -10,7 +10,22 @@ Here are some general guidelines on sessions.
 
 `Session` interface is used to handle the session data, you can get it from `WebRequest#session`.
 
+```java
+Session session = request.session();
 
+String uName = session.get("userName"); //read
+session.set("uid", uid)                 //set
+```
+
+Another approach to get data from session is use `@SessionAttribute` on action method argument
+```java
+
+  //Sparkle framework will get session data with 'userName' and pass it as argument
+  public String account(@SessionAttribute("userName") String userName){
+    
+  }
+
+```
 
 ## Session Storage
 
