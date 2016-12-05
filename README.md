@@ -28,7 +28,7 @@
     * JSP support
     * Customize view templating support 
 
-* [Using Session](session_store.md)
+* [Using Session](session.md)
   * Using Session
   * Session Store Strategies
     * Cookie Based Session Store
