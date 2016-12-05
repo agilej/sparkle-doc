@@ -4,7 +4,7 @@ Here are some general guidelines on sessions.
 
 * __Do not store large objects in a session__. Instead you should store them in the database and save their id in the session. This will eliminate synchronization headaches and it won't fill up your session storage space (depending on what session storage you chose, see below). This will also be a good idea, if you modify the structure of an object and old versions of it are still in some user's cookies. With server-side session storages you can clear out the sessions, but with client-side storages, this is hard to mitigate.
 
-* __Do not store critical data should in session__. If the user clears their cookies or closes the browser, they will be lost. And with a client-side session storage, the user can read the data.
+* __Do not store critical data in session__. If the user clears their cookies or closes the browser, they will be lost. And with a client-side session storage, the user can read the data.
 
 ## Session API In Sparkle
 
