@@ -47,7 +47,7 @@
 
 * [Configuring Sparkle MVC](mvc_config.md)
   * Interceptors
-  * [Customize View Resolver](customize_view_resolve.md)
+  * [Customize View Render](customize_view_resolve.md)
   * [Customize Argument Resolver](customize_argument_resolve.md)
   * Session Store
   * Locale Resolver

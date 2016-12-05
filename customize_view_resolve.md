@@ -1,19 +1,19 @@
-# Customized view resolver
+# Customized view render
 
-Most of time we want to use template engine in application, but Sparkle does not ship with any built-in template engine. You could customize your own view resolver with the template engine you choose. 
+Most of time we want to use template engine in application, but Sparkle does not ship with any built-in template engine. You could customize your own view render with the template engine you choose. 
 
-To support customzie a view resolver, Sparkle provide `ViewRender` registration. All you need to do is creating one implement of `ViewRender` and register it in app configuration with `Config#registerViewRenderClass`.
+To support customzie a view render, Sparkle provide `ViewRender` registration. All you need to do is creating one implement of `ViewRender` and register it in app configuration with `Config#registerViewRenderClass`.
 
 Here is one example to integrate [Pebble Template Engine](http://www.mitchellbosecke.com/pebble/home) into application.
 
-1. __Implement ViewResolver__
+1. __Implement ViewRender__
 
     ```java
-    class PebbleViewResolver implement ViewRender {
+    class PebbleViewRender implement ViewRender {
 
       private PebbleEngine engine;
 
-      public PebbleViewResolver(){
+      public PebbleViewRender(){
         this.engine = new PebbleEngine();
       }
 
@@ -35,7 +35,7 @@ Here is one example to integrate [Pebble Template Engine](http://www.mitchellbos
     class AppConfig implement Application {
 
       public void config(Config config){
-          config.registerViewRenderClass(PebbleViewResolver.class);
+          config.registerViewRenderClass(PebbleViewRender.class);
       }
 
     }
