@@ -19,17 +19,25 @@
 * [Interceptor](interceptor.md)
 
 * [View Resolve](view.md)
+  * View Resolve
+  * Built-in view resolvers
+    * JSON
+    * Text
+    * Redirect
+  * Other View Templating Integration
+    * JSP support
+    * Customize view templating support 
 
-  * Resolving views with the ViewResolver interface
-  * Redirect
-  * JSON result
-  * Other View Template Tech Integration
+* [Using Session](session_store.md)
+  * Using Session
+  * Session Store Strategies
+    * Cookie Based Session Store
+    * Vendor Session Store
+  * Customize session store
 
 * [Using locales](locales.md)
   * AcceptHeaderLocaleResolver
   * CookieLocaleResolver
-  * SessionLocaleResolver
-  * LocaleChangeInterceptor
 
 * [Multipart (File Upload) Support](multipart.md)
   * 
