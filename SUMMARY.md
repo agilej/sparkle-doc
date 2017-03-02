@@ -22,18 +22,11 @@
 * [View Resolve](view.md)
   * View Resolve
   * Built-in view resolvers
-    * JSON
-    * Text
-    * Redirect
   * Other View Templating Integration
-    * JSP support
-    * Customize view templating support 
 
 * [Using Session](session.md)
   * [Using Session](session.md#session-api-in-sparkle)
   * [Session Store Strategies](session.md#session-storage)
-    * Cookie Based Session Store
-    * Vendor Session Store
   * [Customize session store](session.md#customize-session-store)
 
 * [Using locales](locales.md)
