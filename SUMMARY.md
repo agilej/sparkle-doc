@@ -7,7 +7,7 @@
 
 * [Feature](feature.md)
   
-* [Route](route.md)
+* Route
    * [Route module](route_module.md)
    * [Route rule with conditions](route_condition.md)
 
