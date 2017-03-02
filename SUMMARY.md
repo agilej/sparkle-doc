@@ -1,8 +1,12 @@
+# Quick Start
+
+* [Quick start guide](quickstart.md)
+
 # Reference
 
 * [Feature](feature.md)
   
-* [路由](route.md)
+* [Route](route.md)
    * [Route module](route_module.md)
    * [Route rule with conditions](route_condition.md)
 
@@ -14,18 +18,26 @@
 
 * [Interceptor](interceptor.md)
 
-* [视图](view.md)
+* [View Resolve](view.md)
+  * View Resolve
+  * Built-in view resolvers
+    * JSON
+    * Text
+    * Redirect
+  * Other View Templating Integration
+    * JSP support
+    * Customize view templating support 
 
-  * Resolving views with the ViewResolver interface
-  * Redirect
-  * JSON result
-  * Other View Template Tech Integration
+* [Using Session](session.md)
+  * [Using Session](session.md#session-api-in-sparkle)
+  * [Session Store Strategies](session.md#session-storage)
+    * Cookie Based Session Store
+    * Vendor Session Store
+  * [Customize session store](session.md#customize-session-store)
 
 * [Using locales](locales.md)
   * AcceptHeaderLocaleResolver
   * CookieLocaleResolver
-  * SessionLocaleResolver
-  * LocaleChangeInterceptor
 
 * [Multipart (File Upload) Support](multipart.md)
   * 
@@ -35,7 +47,7 @@
 
 * [Configuring Sparkle MVC](mvc_config.md)
   * Interceptors
-  * View Resolvers
-  * Argument Resolvers
+  * [Customize View Render](customize_view_resolve.md)
+  * [Customize Argument Resolver](customize_argument_resolve.md)
   * Session Store
   * Locale Resolver
