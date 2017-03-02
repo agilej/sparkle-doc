@@ -11,9 +11,10 @@
    * [Route module](route_module.md)
    * [Route rule with conditions](route_condition.md)
 
-* [Implementing Controller](controller.md)
-  * Method Argument Resolve
-  * Method Result Resolve
+* Controller
+  * [Implementing Controller](controller.md)
+  * [Method Argument Resolve](argument_resolv.md)
+  * [Method Result Resolve](result_resolv.md)
   
 * [Async Processing](async.md)
 
@@ -34,7 +35,6 @@
   * CookieLocaleResolver
 
 * [Multipart (File Upload) Support](multipart.md)
-  * 
 
 * [Exception Handle](exception_handler.md)
   * HandlerExceptionResolver
