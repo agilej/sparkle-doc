@@ -1,6 +1,7 @@
 # Quick Start
 
-* [Quick start guide](quickstart.md)
+* [Installation](installation.md)
+* [Quick Start Guide](quickstart.md)
 
 # Reference
 

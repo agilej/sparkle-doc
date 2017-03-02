@@ -6,7 +6,7 @@ Sparkle framework is designed to be running on different containers or servers, 
 
 Add dependency to your maven's `pom.xml`
 
-```xml
+``` xml
   <dependency>
     <groupId>org.agilej</groupId>
     <artifactId>sparkle-servlet</artifactId>
@@ -16,7 +16,7 @@ Add dependency to your maven's `pom.xml`
 
 Other dependency managers such as gradle:
 
-```groovy
+``` groovy
   compile "org.agilej:sparkle-servlet:1.0-SNAPSHOT"
 ```
 
@@ -24,7 +24,7 @@ Other dependency managers such as gradle:
 
 Create one `RouteModule` java class, define your route rules.
 
-```java
+``` java
   public class DemoRouteModule implements RouteModule {
     
       @Override
@@ -39,7 +39,7 @@ Create one `RouteModule` java class, define your route rules.
 
 Implement `user` controller defined in above `RouteModule`
 
-```java
+``` java
 
 @Controller("user")
 public class UserController{
