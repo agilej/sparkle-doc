@@ -68,3 +68,28 @@ If you run Sparkle application under Servlet container like Tomcat, you may choo
 
 ## Customize Session Store
 
+Sparkle also provide ability to customize your own session store strategy if all the built-in strategies can't meet your requirement. For example you may want to use Redis to store session, in this scenery you can regiester your customized session store strategy to Sparkle, Here is the code demostration.
+
+```java
+
+class YourSessionStore implements SessionStore {
+  
+  public Object get(WebRequest request, String name) {
+    //...
+  }
+
+  public set(WebRequest request, String name, Object value) {
+    //...
+  }
+
+  public remove(WebRequest request, String name) {
+    //...
+  }
+  
+}
+
+// register
+
+
+
+```
