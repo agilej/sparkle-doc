@@ -20,8 +20,8 @@
 
 * [Interceptor](interceptor.md)
 
-* [View Resolve](view.md)
-  * View Resolve
+* View Resolve
+  * [View Resolve](view.md)
   * Built-in view resolvers
   * Other View Templating Integration
 
