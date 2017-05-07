@@ -3,7 +3,8 @@
 Route condition is used to define specific route rule from request info and mapping to controller method.
 
 One route rule condition example may like this:
-```
+
+```java
 class MyRouteModule implements RouteModule {
   
   void config(Router router) {

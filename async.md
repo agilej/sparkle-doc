@@ -85,7 +85,7 @@ public Class UserController {
 
 * Example with @Async annotation
 
-```
+```java
 @Async
 public List<User> index(){
   List<User> users = remoteUserService.listUsers();
@@ -96,7 +96,7 @@ public List<User> index(){
 
 * Example with `Callable` result.
 
-```
+```java
 public Callable index(){
   return new Callable(){
     Object call(){
@@ -110,7 +110,7 @@ public Callable index(){
 
 * Example with `DeferredResult`.
 
-```
+```java
 public DeferredResult index(){
   DeferredResult deferredResult = new DeferredResult();
   executeWithYourOwnAsyncModel(deferredResult);

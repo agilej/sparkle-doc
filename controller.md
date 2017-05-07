@@ -30,7 +30,7 @@ The above code define `user` controller and has a `show` action method, so it's 
 In sparkle, one action method must meet two requirements:
 
 * `public`, it must mark as public.
-*  Has exactly same name with route rules, so you can't Java overload for action method.
+*  Has exactly same name with route rules, means you can't use Java overload for action method.
 
 Action method can have various arguments and different return type, you will see it in the following part.
 
