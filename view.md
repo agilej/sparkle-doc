@@ -64,6 +64,7 @@ If you want to use [jackson](jsonty) to build json result, annotate your action 
 
 ``` java
 
+@Json
 public List<Users> output(WebRequest request) {
   List<User> users = this.userService.findAll();
   return users;

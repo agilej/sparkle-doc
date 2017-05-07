@@ -24,3 +24,12 @@ Sparkle framework also support multi route modules, so you can group route rules
 
 * All route modules are automatically scanned and installed during framework's startup.
 * All route modules are orderless, means you should not design your route rules depend on specific roders.
+
+### Route's path template
+
+As you have seen above, you can define path variables with '{}' syntax for one route, these named parameters will be accessible through annotation `@PathVariable` or `WebRequest#pathVariable`
+
+Just remember, every path variable name must match:
+
+1. Start with a-z or A-Z
+2. Can only contains `a-z` `A-Z` `0-9` and `_`
